@@ -1,19 +1,19 @@
 ### Exemplo de Diagrama UML (Mermaid)
 ```mermaid
 classDiagram
-    interface ReprodutorMusical {
+    class ReprodutorMusical {
       +tocar()
       +pausar()
       +selecionarMusica(String musica)
 }
 
-    interface AparelhoTelefonico {
+    class AparelhoTelefonico {
       +ligar(String numero)
       +atender()
       +iniciarCorreioVoz()
 }
 
-    interface NavegadorInternet {
+    class NavegadorInternet {
   +exibirPagina(String url)
   +adicionarNovaAba()
   +atualizarPagina()
