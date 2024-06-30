@@ -2,19 +2,19 @@
 ```mermaid
 classDiagram
     interface ReprodutorMusical {
-  +tocar()
-  +pausar()
-  +selecionarMusica(mString)
+      +tocar()
+      +pausar()
+      +selecionarMusica(String musica)
 }
 
     interface AparelhoTelefonico {
-  +ligar(String)
-  +atender()
-  +iniciarCorreioVoz()
+      +ligar(String numero)
+      +atender()
+      +iniciarCorreioVoz()
 }
 
     interface NavegadorInternet {
-  +exibirPagina(String)
+  +exibirPagina(String url)
   +adicionarNovaAba()
   +atualizarPagina()
 }
