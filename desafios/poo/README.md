@@ -1,36 +1,28 @@
-```plantuml
-@startuml
-
-interface ReprodutorMusical {
-  + tocar(): void
-  + pausar(): void
-  + selecionarMusica(musica: String): void
+### Exemplo de Diagrama UML (Mermaid)
+```mermaid
+classDiagram
+    interface ReprodutorMusical {
+  +tocar()
+  +pausar()
+  +selecionarMusica(mString)
 }
 
-interface AparelhoTelefonico {
-  + ligar(numero: String): void
-  + atender(): void
-  + iniciarCorreioVoz(): void
+    interface AparelhoTelefonico {
+  +ligar(String)
+  +atender()
+  +iniciarCorreioVoz()
 }
 
-interface NavegadorInternet {
-  + exibirPagina(url: String): void
-  + adicionarNovaAba(): void
-  + atualizarPagina(): void
+    interface NavegadorInternet {
+  +exibirPagina(String)
+  +adicionarNovaAba()
+  +atualizarPagina()
 }
 
-class iPhone {
-  implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet
-  - bateria: int
-  - armazenamento: int
-  + iPhone()
-  + carregar(): void
-  + verificarBateria(): int
-}
+    class iPhone {
+    }
 
-iPhone --> ReprodutorMusical
-iPhone --> AparelhoTelefonico
-iPhone --> NavegadorInternet
-
-@enduml
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
 ```
